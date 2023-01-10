@@ -29,8 +29,7 @@ namespace LongMethod
 
         void Update()
         {
-            // Keeps cursor locked in game window
-            Cursor.lockState = CursorLockMode.Locked;
+
 
             //Split character movement into separate methods
             MoveCharacter();
@@ -78,6 +77,10 @@ namespace LongMethod
 
 
 
-        void Start() {}
+        void Start() 
+        {
+            // Keeps cursor locked in game window
+            Cursor.lockState = CursorLockMode.Locked;
+        }
     }
 }
